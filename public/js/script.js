@@ -30,7 +30,9 @@ function purchase(itemType) {
       autoClicker4: { cost: 50000000, effect: () => autoClickerSpeed += 50000 },
       clickBooster4: { cost: 100000000, effect: () => clickBoosterPower += 50000 },
       autoClicker5: { cost: 5000000000, effect: () => autoClickerSpeed += 1000000 },
-      clickBooster5: { cost: 10000000000, effect: () => clickBoosterPower += 1000000 }
+      clickBooster5: { cost: 10000000000, effect: () => clickBoosterPower += 1000000 },
+      autoClicker6: { cost: 500000000000, effect: () => autoClickerSpeed += 10000000 },
+      clickBooster6: { cost: 1000000000000, effect: () => clickBoosterPower += 10000000 },
   };
 
   if (itemType in items) {
@@ -51,7 +53,10 @@ function prestige(itemType) {
     prestige2: { cost: 100000000, effect: () => prestigePoints += 5 },
     prestige3: { cost: 1000000000, effect: () => prestigePoints += 20 },
     prestige4: { cost: 10000000000, effect: () => prestigePoints += 50 },
-    prestige5: { cost: 100000000000, effect: () => prestigePoints += 100 }
+    prestige5: { cost: 100000000000, effect: () => prestigePoints += 100 },
+    prestige6: { cost: 1000000000000, effect: () => prestigePoints += 200 },
+    prestige7: { cost: 10000000000000, effect: () => prestigePoints += 400 },
+    prestige8: { cost: 100000000000000, effect: () => prestigePoints += 800 }
   }
 
   if (itemType in items) {
