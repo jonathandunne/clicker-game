@@ -7,6 +7,22 @@ body {
     height: 100vh;
     margin: 0;
 }
+.buttons-container {
+  text-align: center; /* Center the buttons horizontally */
+  padding-bottom: 10px; /* Add space between buttons and game title */
+}
+
+.game-title {
+  text-align: center;
+  margin: 0;
+  padding-top: 10px; /* Add some space between the buttons and the title */
+  font-size: 2em;
+  color: rgb(0, 0, 0); /* Assuming white text fits your header color scheme */
+  position: absolute; /* Position relative to header */
+  top: 60px; /* Tweak this value based on the actual size of your buttons */
+  left: 0;
+  right: 0;
+}
 
 #game-container {
     text-align: center;
@@ -63,3 +79,29 @@ body {
 #prestige-area button:hover {
     background-color: #ddd;
 }
+
+#header {
+    width: 100%; /* Ensure the header extends the full width of the page */
+    background-color: #333; /* Dark background for the header */
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    position: fixed; /* Fix the header to the top of the page */
+    top: 0; /* Align the top edge of the header with the top of the page */
+    left: 0; /* Align the left edge of the header with the left side of the page */
+    z-index: 1000; /* Ensure header stays above other content */
+}
+  .mode-button {
+    background: none; /* No background color */
+    border: none; /* Remove the default border */
+    color: white; /* White text color */
+    font-size: 1em;
+    padding: 10px 20px; /* Padding for the buttons */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .mode-button:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Slight shade when hovering */
+  }

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clicker Game</title>
+</head>
+<link rel="stylesheet" href="easy.css">
+<body>
+    <div id="header">
+        <button onclick="window.location.href='/easy'" class="mode-button" id="easyMode">Easy Mode</button>
+        <button onclick="window.location.href='/hard'" class="mode-button" id="hardMode">Hard Mode</button>
+        <button onclick="window.location.href='/'" class="mode-button" id="normalMode">Normal Mode</button>
+        <h1 class="game-title">Easy Mode</h1>
+    </div>
+  <div id="game-container">
+    <div id="score">0</div>
+    <button id="clicker">Click me!</button>
+    <div id="shop">
+      <div id="autoClickerSpeed">AutoClicker Speed: 0</div>
+      <div id="clickBoosterPower">Click Booster Power: 0</div>
+      <button class="purchase" data-type="autoClicker1">Buy AutoClicker 1 (Speed 1) (Cost 5)</button>
+      <button class="purchase" data-type="clickBooster1">Buy Click Booster 1 (Power 1) (Cost 10)</button>
+      <button class="purchase" data-type="autoClicker2">Buy AutoClicker 2 (Speed 50) (Cost 500)</button>
+      <button class="purchase" data-type="clickBooster2">Buy Click Booster 2 (Power 50) (Cost 1,000)</button>
+      <button class="purchase" data-type="autoClicker3">Buy AutoClicker 3 (Speed 2,000) (Cost 50,000)</button>
+      <button class="purchase" data-type="clickBooster3">Buy Click Booster 3 (Power 2,000) (Cost 100,000)</button>
+      <button class="purchase" data-type="autoClicker4">Buy AutoClicker 4 (Speed 50,000) (Cost 5,000,000)</button>
+      <button class="purchase" data-type="clickBooster4">Buy Click Booster 4 (Power 50,000) (Cost 10,000,000)</button>
+      <button class="purchase" data-type="autoClicker5">Buy AutoClicker 5 (Speed 1,000,000) (Cost 500,000,000)</button>
+      <button class="purchase" data-type="clickBooster5">Buy Click Booster 5 (Power 1,000,000) (Cost 1,000,000,000)</button>
+      <button class="purchase" data-type="autoClicker6">Buy AutoClicker 6 (Speed 10,000,000) (Cost 50,000,000,000)</button>
+      <button class="purchase" data-type="clickBooster6">Buy Click Booster 6 (Power 10,000,000) (Cost 100,000,000,000)</button>
+    </div>
+    <div id="prestige-area">
+      <h3>Prestige</h3>
+      <div id="prestigePoints">Prestige Points: 0</div>
+      <div id="prestigeBoost">A Prestige resets all boost and score but each Prestige Point gives a 10% boost</div>
+      <button class="prestige" data-type="prestige1">Prestige for 1 Point (10 Million Cost)</button>
+      <button class="prestige" data-type="prestige2">Prestige for 5 Points (100M Cost)</button>
+      <button class="prestige" data-type="prestige3">Prestige for 20 Points (1B Cost)</button>
+      <button class="prestige" data-type="prestige4">Prestige for 50 Points (10B Cost)</button>
+      <button class="prestige" data-type="prestige5">Prestige for 100 Points (100B Cost)</button>
+      <button class="prestige" data-type="prestige6">Prestige for 200 Points (1T Cost)</button>
+      <button class="prestige" data-type="prestige7">Prestige for 400 Points (10T Cost)</button>
+      <button class="prestige" data-type="prestige8">Prestige for 800 Points (100T Cost)</button>
+    </div>
+  </div>
+  <script src="js/script-easy.js"></script>
+</body>
+</html>
