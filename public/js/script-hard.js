@@ -21,18 +21,18 @@ function updatePrestigePoints() {
 function purchase(itemType) {
   // Sets costs and effects of all boosts
   const items = {
-      autoClicker1: { cost: 500, effect: () => autoClickerSpeed += 1 },
-      clickBooster1: { cost: 1000, effect: () => clickBoosterPower += 1 },
-      clickBooster2: { cost: 100000, effect: () => clickBoosterPower += 50 },
-      autoClicker2: { cost: 50000, effect: () => autoClickerSpeed += 50 },
-      autoClicker3: { cost: 5000000, effect: () => autoClickerSpeed += 2000 },
-      clickBooster3: { cost: 10000000, effect: () => clickBoosterPower += 2000 },
-      autoClicker4: { cost: 500000000, effect: () => autoClickerSpeed += 50000 },
-      clickBooster4: { cost: 1000000000, effect: () => clickBoosterPower += 50000 },
-      autoClicker5: { cost: 50000000000, effect: () => autoClickerSpeed += 1000000 },
-      clickBooster5: { cost: 100000000000, effect: () => clickBoosterPower += 1000000 },
-      autoClicker6: { cost: 5000000000000, effect: () => autoClickerSpeed += 10000000 },
-      clickBooster6: { cost: 10000000000000, effect: () => clickBoosterPower += 10000000 },
+      autoClicker1: { cost: 100, effect: () => autoClickerSpeed += 1 },
+      clickBooster1: { cost: 200, effect: () => clickBoosterPower += 1 },
+      clickBooster2: { cost: 20000, effect: () => clickBoosterPower += 50 },
+      autoClicker2: { cost: 10000, effect: () => autoClickerSpeed += 50 },
+      autoClicker3: { cost: 1000000, effect: () => autoClickerSpeed += 2000 },
+      clickBooster3: { cost: 2000000, effect: () => clickBoosterPower += 2000 },
+      autoClicker4: { cost: 100000000, effect: () => autoClickerSpeed += 50000 },
+      clickBooster4: { cost: 200000000, effect: () => clickBoosterPower += 50000 },
+      autoClicker5: { cost: 10000000000, effect: () => autoClickerSpeed += 1000000 },
+      clickBooster5: { cost: 20000000000, effect: () => clickBoosterPower += 1000000 },
+      autoClicker6: { cost: 1000000000000, effect: () => autoClickerSpeed += 10000000 },
+      clickBooster6: { cost: 2000000000000, effect: () => clickBoosterPower += 10000000 },
   };
 
   if (itemType in items) {
